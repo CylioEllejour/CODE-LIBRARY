@@ -3,16 +3,16 @@
 `std::sort()`函数的常用参数：
 
 1. 小于比较
-`sort(begin1, end1,less<T>)`
+`sort(begin1, end1,less<T>())`
 
 2. 大于比较
-`sort(begin1, end1,greater<T>)`
+`sort(begin1, end1,greater<T>())`
 
 3. 小于等于比较
-`sort(begin1, end1,less_equal<T>)`
+`sort(begin1, end1,less_equal<T>())`
 
 4. 大于等于比较
-`sort(begin1, end1,greater_equal<T>)`
+`sort(begin1, end1,greater_equal<T>())`
 
 ---
 
