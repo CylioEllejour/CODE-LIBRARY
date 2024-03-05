@@ -16,7 +16,7 @@ struct Edge     // 存储边
     }
 }edges[M];
 
-int find(int x)     // 并查集核心操作
+int find(int x)     // 并查集操作
 {
     if (p[x] != x) p[x] = find(p[x]);
     return p[x];
@@ -24,12 +24,12 @@ int find(int x)     // 并查集核心操作
 
 int kruskal()
 {
-    sort(edges, edges + m);
+    sort(edges, edges + m); // 依据边进行从小到大的排序
 
     for (int i = 1; i <= n; i ++ ) p[i] = i;    // 初始化并查集
 
     int res = 0, cnt = 0;
-    for (int i = 0; i < m; i ++ )
+    for (int i = 0; i < m; i ++ ) // 将边由小到大进行填充
     {
         int a = edges[i].a, b = edges[i].b, w = edges[i].w;
 
