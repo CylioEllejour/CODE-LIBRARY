@@ -42,7 +42,7 @@ int kruskal()
         }
     }
 
-    if (cnt < n - 1) return INF;
+    if (cnt < n - 1) return INF; // 在由小到大的边组合下，符合要求节点数，则由最小生成树
     return res;
 }
 ```
